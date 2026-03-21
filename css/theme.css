@@ -1,0 +1,159 @@
+/* ============================================
+   ResQ — Light/Dark Theme Patch
+   ============================================ */
+
+[data-theme="light"] {
+    --bg: #fdf8f3;
+    --bg2: #ffffff;
+    --bg3: #f5ede0;
+    --border: #e8d5c0;
+    --border2: #d4b896;
+    --accent: #c96a20;
+    --accent2: #a02018;
+    --accent-soft: rgba(201, 106, 32, 0.1);
+    --accent-glow: rgba(201, 106, 32, 0.2);
+    --text: #1a0f05;
+    --text-dim: #6b4c30;
+    --text-mute: #b09070;
+    --earth: #7a4e2c;
+}
+
+body,
+.header,
+.hero,
+.input-panel,
+.response-panel,
+.hospitals-panel,
+.contacts-panel,
+.footer,
+.quick-btn,
+.lang-current,
+.lang-menu,
+.contact-card,
+.emergency-textarea,
+.copy-btn,
+.new-query-btn {
+    transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg3);
+    border: 1.5px solid var(--border2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    transform: rotate(20deg) scale(1.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.9);
+}
+
+.theme-toggle svg {
+    position: absolute;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.theme-toggle .icon-sun {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.4);
+    color: #c96a20;
+}
+
+.theme-toggle .icon-moon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    color: #c8a86b;
+}
+
+[data-theme="light"] .theme-toggle .icon-sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.4);
+}
+
+[data-theme="light"] body {
+    background: var(--bg);
+    background-image: radial-gradient(ellipse at 20% 50%, rgba(201, 106, 32, 0.05) 0%, transparent 60%), radial-gradient(ellipse at 80% 10%, rgba(192, 57, 43, 0.04) 0%, transparent 50%);
+}
+
+[data-theme="light"] #particleCanvas {
+    opacity: 0.1;
+}
+
+[data-theme="light"] .header {
+    background: rgba(253, 248, 243, 0.94);
+}
+
+[data-theme="light"] .header.scrolled {
+    box-shadow: 0 4px 32px rgba(100, 60, 20, 0.12);
+}
+
+[data-theme="light"] .hero {
+    background: linear-gradient(160deg, #fff8f0 0%, #fdf3e8 100%);
+}
+
+[data-theme="light"] .hero::before {
+    opacity: 0.05;
+}
+
+[data-theme="light"] .quick-btn {
+    background: #ffffff;
+    color: var(--text-dim);
+}
+
+[data-theme="light"] .quick-btn:hover {
+    background: var(--accent-soft);
+    color: var(--text);
+}
+
+[data-theme="light"] .contact-card {
+    background: var(--bg3);
+}
+
+[data-theme="light"] .lang-menu {
+    background: #ffffff;
+    box-shadow: 0 16px 48px rgba(100, 60, 20, 0.18);
+}
+
+[data-theme="light"] .emergency-textarea {
+    background: var(--bg3);
+}
+
+[data-theme="light"] .response-content strong {
+    color: var(--accent);
+}
+
+[data-theme="light"] .hospitals-panel,
+[data-theme="light"] .contacts-panel,
+[data-theme="light"] .input-panel {
+    box-shadow: 0 4px 24px rgba(100, 60, 20, 0.1);
+}
+
+.emergency-banner {
+    background: linear-gradient(90deg, #8b0000, #c0392b, #8b0000) !important;
+    background-size: 200% 100% !important;
+}
