@@ -928,6 +928,8 @@ body {
   font-size: 15px;
   line-height: 1.9;
   color: var(--text);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .response-content strong {
