@@ -48,7 +48,7 @@
         }
     }
 
-    for (let i = 0; i < 80; i++) particles.push(new Particle());
+    for (let i = 0; i < 75; i++) particles.push(new Particle());
 
     function animate() {
         ctx.clearRect(0, 0, W, H);
