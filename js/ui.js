@@ -189,7 +189,7 @@ document.head.appendChild(style);
             }
         }
 
-        setTimeout(type, deleting ? 25 : 55);
+        setTimeout(type, deleting ? 30 : 55);
     }
 
     setTimeout(type, 1000);
