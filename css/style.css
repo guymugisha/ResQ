@@ -702,7 +702,7 @@ body {
   top: -100px;
   right: -100px;
   pointer-events: none;
-  animation: glowFloat 6s ease-in-out infinite;
+  animation: glowFloat 7s ease-in-out infinite;
 }
 
 @keyframes glowFloat {
