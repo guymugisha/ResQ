@@ -931,7 +931,7 @@ body {
 
 .response-content {
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 1.85;
   color: var(--text);
   overflow-wrap: break-word;
   word-break: break-word;
