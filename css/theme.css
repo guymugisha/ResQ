@@ -101,7 +101,7 @@ body,
 }
 
 [data-theme="light"] #particleCanvas {
-    opacity: 0.1;
+    opacity: 0.08;
 }
 
 [data-theme="light"] .header {
