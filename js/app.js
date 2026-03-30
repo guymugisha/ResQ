@@ -4,9 +4,9 @@
 // ============================================
 
 // ---- CONFIG ----
-const RAPID_API_KEY = 'efa7975aafmsh84c52851d616586p16d10fjsn3d3eadef1ab1';
-const RAPID_API_HOST = 'chatgpt-42.p.rapidapi.com';
-const RAPID_API_URL = 'https://chatgpt-42.p.rapidapi.com/conversationgpt4-2';
+const RAPID_API_KEY = window.RESQ_CONFIG?.RAPID_API_KEY;
+const RAPID_API_HOST = window.RESQ_CONFIG?.RAPID_API_HOST;
+const RAPID_API_URL = window.RESQ_CONFIG?.RAPID_API_URL;
 
 // ---- QUICK PROMPTS ----
 const QUICK_PROMPTS = {

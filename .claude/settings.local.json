@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(python -c \":*)",
+      "Bash(\"c:/Users/mugis/OneDrive/Desktop/ALU/ResQ/README.md\":*)"
+    ]
+  }
+}
