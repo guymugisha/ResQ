@@ -158,6 +158,11 @@ body,
     box-shadow: 0 4px 24px rgba(100, 60, 20, 0.1);
 }
 
+[data-theme="light"] .get-help-btn {
+    background: linear-gradient(135deg, #c96a20, #a02018);
+    color: #ffffff;
+}
+
 .emergency-banner {
     background: linear-gradient(90deg, #8b0000, #c0392b, #8b0000) !important;
     background-size: 200% 100% !important;
