@@ -163,6 +163,10 @@ body,
     color: #ffffff;
 }
 
+[data-theme="light"] .get-help-btn .btn-bg {
+    background: linear-gradient(135deg, #c96a20, #a02018);
+}
+
 .emergency-banner {
     background: linear-gradient(90deg, #8b0000, #c0392b, #8b0000) !important;
     background-size: 200% 100% !important;
