@@ -198,7 +198,6 @@ function copyResponse() {
 // ---- RESET ----
 function resetQuery() {
   document.getElementById('responsePanel').style.display = 'none';
-  document.getElementById('hospitalsPanel').style.display = 'none';
   document.getElementById('emergencyInput').value = '';
   document.getElementById('charCount').textContent = '0 / 500';
   document.getElementById('emergencyInput').focus();
