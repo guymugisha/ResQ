@@ -251,7 +251,7 @@ French apostrophes (`'`) in inline JS strings caused syntax errors. Solved by us
 
 ## 📹 Demo Video
 
-**Link:** [YouTube/Vimeo link here]
+**Link:** [https://youtu.be/2O5v8M5aBIU]
 
 The demo video covers:
 1. Running the app locally
